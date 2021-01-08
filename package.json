@@ -1,11 +1,15 @@
 {
-  "name": "whoami",
+  "name": "ask-whoam-ii",
   "version": "0.1.0",
   "description": "Put your signature on your projects",
   "main": "whoami.js",
   "scripts": {
     "test": "node test && echo ✔ Tests Completet ✔",
     "postinstall": "node postinstall.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yingrjimsch/whoami.git"
   },
   "keywords": [
     "whoami",
