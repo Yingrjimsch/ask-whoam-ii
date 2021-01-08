@@ -1,0 +1,21 @@
+{
+  "name": "whoami",
+  "version": "0.1.0",
+  "description": "Put your signature on your projects",
+  "main": "whoami.js",
+  "scripts": {
+    "test": "node test && echo ✔ Tests Completet ✔",
+    "postinstall": "node postinstall.js"
+  },
+  "keywords": [
+    "whoami",
+    "signature",
+    "ascii"
+  ],
+  "author": "Yingrjimsch",
+  "license": "ISC",
+  "dependencies": {
+    "figlet": "^1.5.0"
+  },
+  "devDependencies": {}
+}

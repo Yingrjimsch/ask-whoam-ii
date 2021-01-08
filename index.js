@@ -1,0 +1,1 @@
+mdule.exports = require('./whoami.js');
