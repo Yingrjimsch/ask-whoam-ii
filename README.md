@@ -21,5 +21,4 @@ with ask-whoam-ii you can give every npm project your very own signature!
 ## Release History
 2020.01.11v0.1.1 - added `init`, `changeVal` `changeKey` `whoami` methods.
 
-
 2020.01.08v0.1.0 - first implementation without customizable key value
