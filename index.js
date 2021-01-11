@@ -1,1 +1,1 @@
-mdule.exports = require('./whoami.js');
+module.exports = require('./whoami.js');

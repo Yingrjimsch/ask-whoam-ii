@@ -1,59 +1,33 @@
 import figlet from 'figlet';
 import standard from 'figlet/importable-fonts/Standard.js';
 
-(function () {
+var key = '';
+var val = '';
+var input = '';
+
+export function init(k = 'whoami', v = 'Yingrjimsch') {
+  //console.log(whoami());
   figlet.parseFont('Standard', standard);
-  var key = 'whoami';
-  var val = 'G.N';
-  var input = '';
+  key = k;
+  val = v;
+}
 
-  document.addEventListener('keydown', function (event) {
-    input = key.includes(input + event.key) ? input + event.key : '';
-    if (key === input) {
-      figlet.text(
-        whoami(),
-        {
-          font: 'Standard',
-        },
-        function (err, data) {
-          if (err) {
-            console.error('Something went wrong...');
-          }
-          console.log(data);
-          input = '';
-        }
-      );
-    }
-  });
+export function changeVal(v) {
+  val = v;
+}
 
-  var whoami = function () {
-    return val;
-  };
+export function changeKey(k) {
+  key = k;
+}
 
-  whoami.init = function (k, v) {
-    key = k;
-    val = v;
-  };
+export function whoami() {
+  return figlet.textSync(val);
+}
 
-  whoami.changeVal = function (v) {
-    val = v;
-  };
-
-  whoami.changeKey = function (k) {
-    key = k;
-  };
-
-  whoami.getKey = function (k) {
-    return key;
-  };
-  
-  whoami.valueOf = whoami;
-
-  if (typeof module !== 'undefined' && module.exports) {
-    module.exports = whoami;
-  } else if (typeof define === 'function' && define.amd) {
-    define(whoami);
-  } else if (window) {
-    window.whoami = whoami;
+document.addEventListener('keydown', function (event) {
+  input = key.includes(input + event.key) ? input + event.key : '';
+  if (key === input) {
+    input = '';
+    console.log(whoami());
   }
-})();
+});
