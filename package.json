@@ -1,6 +1,6 @@
 {
   "name": "ask-whoam-ii",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Put your signature on your projects",
   "main": "whoami.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Yingrjimsch/whoami.git"
+    "url": "https://github.com/Yingrjimsch/ask-whoam-ii.git"
   },
   "keywords": [
     "whoami",
